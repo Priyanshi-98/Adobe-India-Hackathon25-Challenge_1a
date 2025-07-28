@@ -29,14 +29,16 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
 <br><br>
 
 ## Output JSON Format
-{<br>
-  "title": "Understanding AI",<br>
-  "outline": [<br>
-    { "level": "H1", "text": "Introduction", "page": 0 },<br>
-    { "level": "H2", "text": "What is AI?", "page": 1 },<br>
-    { "level": "H3", "text": "History of AI", "page": 2 }<br>
-  ]<br>
+```json
+{
+  "title": "Understanding AI",
+  "outline": [
+    { "level": "H1", "text": "Introduction", "page": 0 },
+    { "level": "H2", "text": "What is AI?", "page": 1 },
+    { "level": "H3", "text": "History of AI", "page": 2 }
+  ]
 }
+```
 <br><br>
 
 ## Directory Structure
