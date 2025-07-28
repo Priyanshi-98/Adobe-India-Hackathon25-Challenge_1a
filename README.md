@@ -3,7 +3,7 @@
 ## Overview
 This is my submission for Round 1A: Understand Your Document of the Adobe India Hackathon 2025 under the “Connecting the Dots” theme.
 The goal of this challenge is to extract a clean, structured outline from a PDF — including the Title, and Headings (H1, H2, H3) — and output the result as a standardized JSON. This is intended to enable smarter document interaction, powering applications like semantic search, navigation, and AI-based summarization.
-
+<br><br>
 
 ## Approach Used:
 This solution uses a rule-based pipeline to ensure lightweight, deterministic, and fast execution under all hardware constraints.
@@ -26,7 +26,7 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
     - The largest font text on page 0, located near the top, is selected as the document title.
 - JSON Output Generation:
     - The final output is a JSON matching the required schema.
-
+<br><br>
 
 ## Output JSON Format
 {
@@ -37,16 +37,16 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
     { "level": "H3", "text": "History of AI", "page": 2 }
   ]
 }
-
+<br><br>
 
 ## Directory Structure
-/
-├── process_pdfs.py       # Main processing logic
-├── Dockerfile            # Container setup
-├── README.md             # You're reading it
-├── /input                # Mounted input directory (PDFs)
-└── /output               # Mounted output directory (JSONs)
-
+/<br>
+├── process_pdfs.py       # Main processing logic<br>
+├── Dockerfile            # Container setup<br>
+├── README.md             # You're reading it<br>
+├── /input                # Mounted input directory (PDFs)<br>
+└── /output               # Mounted output directory (JSONs)<br>
+<br>
 
 ## Build and Run Instructions
 Build Docker Image
@@ -58,12 +58,12 @@ docker run --rm \
   -v $(pwd)/output:/app/output \
   --network none \
   pdf-processor
-
+<br><br>
 
 ## Libraries Used
 - pdfplumber: for detailed PDF text + layout extraction
 - Python standard libraries: collections, json, os, pathlib
-
+<br><br>
 
 ## Testing Strategy
 This code has been tested across:
@@ -71,9 +71,9 @@ This code has been tested across:
 - Long PDFs (10+ pages) with mixed formatting
 - PDFs with center-aligned vs left-aligned headings
 - Edge cases like numbered lists or short forms
+<br><br>
 
-
-  ## Possible Improvements
-  - Integrate ML/LLM models for semantic-aware heading detection
-  - Enhance heading-level classification using clustering + layout patterns
-  - Add support for visual cues like bold, caps-lock, or indentation
+## Possible Improvements
+- Integrate ML/LLM models for semantic-aware heading detection
+- Enhance heading-level classification using clustering + layout patterns
+- Add support for visual cues like bold, caps-lock, or indentation
