@@ -40,12 +40,11 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
 <br><br>
 
 ## Directory Structure
-/<br>
-├── process_pdfs.py       <pre># Main processing logic<</pre><br>
-├── Dockerfile            <pre># Container setup</pre><br>
-├── README.md             <pre># You're reading it</pre><br>
-├── /input                <pre># Mounted input directory (PDFs)</pre><br>
-└── /output               <pre># Mounted output directory (JSONs)<</pre>br>
+├── process_pdfs.py  <br>     
+├── Dockerfile            <br>
+├── README.md             <br>
+├── /input                <br>
+└── /output               <br>
 <br>
 
 ## Build and Run Instructions
