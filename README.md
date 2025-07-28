@@ -40,7 +40,8 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
 <br><br>
 
 ## Directory Structure
-├── process_pdfs.py  <br>     
+├── process_pdfs.py  <br>  
+├── requirements.txt  <br>
 ├── Dockerfile            <br>
 ├── README.md             <br>
 ├── /input                <br>
