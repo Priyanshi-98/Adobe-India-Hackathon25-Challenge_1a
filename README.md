@@ -51,15 +51,11 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
 <br>
 
 ## Build and Run Instructions
-Build Docker Image
-docker build --platform linux/amd64 -t pdf-processor .
+- Build Docker Image
+    - docker build --platform linux/amd64 -t pdf-processor .
 
-Run with Mounted Volumes
-docker run --rm \
-  -v $(pwd)/input:/app/input:ro \
-  -v $(pwd)/output:/app/output \
-  --network none \
-  pdf-processor
+- Run with Mounted Volumes
+    - docker run --rm -v "${PWD}/input:/app/input" -v "${PWD}/output:/app/output" --network none pdf-processor
 <br><br>
 
 ## Libraries Used
