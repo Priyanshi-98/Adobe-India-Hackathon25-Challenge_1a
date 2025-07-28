@@ -29,23 +29,23 @@ This solution uses a rule-based pipeline to ensure lightweight, deterministic, a
 <br><br>
 
 ## Output JSON Format
-{
-  "title": "Understanding AI",
-  "outline": [
-    { "level": "H1", "text": "Introduction", "page": 0 },
-    { "level": "H2", "text": "What is AI?", "page": 1 },
-    { "level": "H3", "text": "History of AI", "page": 2 }
-  ]
+{<br>
+  "title": "Understanding AI",<br>
+  "outline": [<br>
+    { "level": "H1", "text": "Introduction", "page": 0 },<br>
+    { "level": "H2", "text": "What is AI?", "page": 1 },<br>
+    { "level": "H3", "text": "History of AI", "page": 2 }<br>
+  ]<br>
 }
 <br><br>
 
 ## Directory Structure
 /<br>
-├── process_pdfs.py       # Main processing logic<br>
-├── Dockerfile            # Container setup<br>
-├── README.md             # You're reading it<br>
-├── /input                # Mounted input directory (PDFs)<br>
-└── /output               # Mounted output directory (JSONs)<br>
+├── process_pdfs.py       <pre># Main processing logic<</pre><br>
+├── Dockerfile            <pre># Container setup</pre><br>
+├── README.md             <pre># You're reading it</pre><br>
+├── /input                <pre># Mounted input directory (PDFs)</pre><br>
+└── /output               <pre># Mounted output directory (JSONs)<</pre>br>
 <br>
 
 ## Build and Run Instructions
