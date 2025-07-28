@@ -19,9 +19,9 @@ We aim to:
 -  **Connect ideas, sections, and contradictions across multiple PDFs**
 -  **Understand** the document—not just view it
 -  Lay the foundation for intelligent document experiences through modular challenges:
-  - **1A:** Identify structure (Title, H1/H2/H3)
-  - **1B:** Relate and rank relevant sections across documents for a specific user persona
-  - **Final:** Seamlessly surface knowledge from previous reads into new reading sessions
+    - **1A:** Identify structure (Title, H1/H2/H3)
+    - **1B:** Relate and rank relevant sections across documents for a specific user persona
+- **Finally** Seamlessly surface knowledge from previous reads into new reading sessions
 
 By focusing on accurate outline extraction in 1A, we build the groundwork to enable deeper inter-document connections in future rounds.
 
@@ -75,6 +75,7 @@ This solution uses a **rule-based pipeline** to ensure lightweight, deterministi
     { "level": "H3", "text": "History of AI", "page": 2 }
   ]
 }
+```
 
 ---
 
